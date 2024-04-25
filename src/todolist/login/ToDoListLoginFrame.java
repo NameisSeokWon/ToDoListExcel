@@ -29,7 +29,7 @@ public class ToDoListLoginFrame extends JFrame{
 		setLocationRelativeTo(null);
 
 		setLayout(new GridLayout(2,1));
-		
+
 
 		// 1번 판넬(ID,PW라벨/ID,PW입력 텍스트필드
 		JPanel panel1 = new JPanel(new GridLayout(2,1));
@@ -84,7 +84,7 @@ public class ToDoListLoginFrame extends JFrame{
 		loginSuccessFlag = tdldao.login(id, pw);
 
 		if(loginSuccessFlag) {
-			JOptionPane.showMessageDialog(null, "ログイン完了");
+			JOptionPane.showMessageDialog(null, "Login Complete");
 			setVisible(false);
 			new ToDoListChoiceFrame();
 		} else {
